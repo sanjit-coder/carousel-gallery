@@ -1,0 +1,38 @@
+.rowCard {
+  flex: 0 0 auto; // Ensure the element does not grow or shrink
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  border: 3px solid yellow;
+  overflow: hidden;
+  scroll-snap-align: start;
+  margin-left: 30px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+
+  &:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.8s ease-in-out;
+  }
+
+  &_verticalCard {
+    width: 120px;
+    margin-left: 20px;
+  }
+}
+
+.rowCardImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 0.8s;
+  // transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out; /* Add filter transition */
+
+  &:hover {
+    filter: blur(1px) brightness(0.8); /*Blur and decrease brightness */
+    transition: all 0.8s;
+  }
+}

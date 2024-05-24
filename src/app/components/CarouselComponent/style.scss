@@ -1,0 +1,17 @@
+.spacing {
+  margin: 0px 15px;
+}
+.carouselImage {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .spacing {
+    margin: 0px;
+  }
+
+  .carouselImage {
+    border-radius: 0px;
+  }
+}
